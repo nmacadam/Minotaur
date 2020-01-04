@@ -1,4 +1,6 @@
 # Minotaur
+A C++ Entity-Component System based game engine.  Currently working towards a simple editor-based workflow with scene saving and entity serialization/deserialization.
+
 ### Features
 * Entity-Component System workflow
 * 3D Model loading via Assimp
