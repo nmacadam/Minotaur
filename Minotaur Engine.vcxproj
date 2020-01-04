@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{DA528806-0EA5-4F16-A608-17722E327B09}</ProjectGuid>
+    <RootNamespace>MinotaurEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\VS_DEV\SDL2-2.0.10\include;D:\VS_DEV\glew-2.1.0\include;D:\VS_DEV\SDL2_ttf-2.0.15\include;D:\VS_DEV\SDL2_mixer-2.0.4\include;D:\VS_DEV\SDL2_image-2.0.5\include;$(SolutionDir)\Minotaur Engine\External Libraries\assimp\include;D:\VS_DEV\reactphysics3d-0.7.1\src;D:\VS_DEV\cereal-master\include;D:\VS_DEV\bullet-2.82-r2704\src;D:\Minotaur\Minotaur Engine\Minotaur Engine\External Libraries\freetype\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\VS_DEV\SDL2-2.0.10\lib\x86;D:\VS_DEV\glew-2.1.0\lib\Debug\Win32;D:\VS_DEV\SDL2_mixer-2.0.4\lib\x86;D:\VS_DEV\SDL2_ttf-2.0.15\lib\x86;D:\VS_DEV\SDL2_image-2.0.5\lib\x86;$(SolutionDir)\Minotaur Engine\External Libraries\assimp\lib;D:\VS_DEV\reactphysics3d-0.7.1\build 1-2-20\lib\Debug;D:\VS_DEV\bullet3-master\build 1-1-20\lib\Debug;D:\Minotaur\Minotaur Engine\Minotaur Engine\External Libraries\freetype\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\VS_DEV\SDL2-2.0.10\include;D:\VS_DEV\glew-2.1.0\include;D:\VS_DEV\SDL2_ttf-2.0.15\include;D:\VS_DEV\SDL2_mixer-2.0.4\include;D:\VS_DEV\SDL2_image-2.0.5\include;$(SolutionDir)\Minotaur Engine\External Libraries\assimp\include;D:\VS_DEV\reactphysics3d-0.7.1\src;D:\VS_DEV\cereal-master\include;D:\VS_DEV\bullet-2.82-r2704\src;D:\Minotaur\Minotaur Engine\Minotaur Engine\External Libraries\freetype\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\VS_DEV\SDL2-2.0.10\lib\x86;D:\VS_DEV\glew-2.1.0\lib\Debug\Win32;D:\VS_DEV\SDL2_mixer-2.0.4\lib\x86;D:\VS_DEV\SDL2_ttf-2.0.15\lib\x86;D:\VS_DEV\SDL2_image-2.0.5\lib\x86;$(SolutionDir)\Minotaur Engine\External Libraries\assimp\lib;D:\VS_DEV\reactphysics3d-0.7.1\build 1-2-20\lib\Debug;D:\VS_DEV\bullet3-master\build 1-1-20\lib\Debug;D:\Minotaur\Minotaur Engine\Minotaur Engine\External Libraries\freetype\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\VS_DEV\SDL2-2.0.10\include;D:\VS_DEV\glew-2.1.0\include;D:\VS_DEV\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32d.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;assimp.lib;LinearMath_Debug.lib;BulletDynamics_Debug.lib;BulletCollision_Debug.lib;freetype.lib;reactphysics3d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\VS_DEV\SDL2-2.0.10\include;D:\VS_DEV\glew-2.1.0\include;D:\VS_DEV\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32d.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;assimp.lib;LinearMath_Debug.lib;BulletDynamics_Debug.lib;BulletCollision_Debug.lib;freetype.lib;reactphysics3d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Minotaur\Minotaur Engine\Minotaur Engine\Source\ECS\FPSCounter.cpp" />
+    <ClCompile Include="DeveloperState.cpp" />
+    <ClCompile Include="External Libraries\imgui\imgui.cpp" />
+    <ClCompile Include="External Libraries\imgui\imgui_demo.cpp" />
+    <ClCompile Include="External Libraries\imgui\imgui_draw.cpp" />
+    <ClCompile Include="External Libraries\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="External Libraries\imgui\imgui_impl_sdl.cpp" />
+    <ClCompile Include="External Libraries\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="External Libraries\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Source\Cache.cpp" />
+    <ClCompile Include="Source\Debug.cpp" />
+    <ClCompile Include="Source\ECS\BoxCollider.cpp" />
+    <ClCompile Include="Source\ECS\Camera.cpp" />
+    <ClCompile Include="Source\ECS\Collider.cpp" />
+    <ClCompile Include="Source\ECS\ECS.cpp" />
+    <ClCompile Include="Source\ECS\FPSCounter.cpp" />
+    <ClCompile Include="Source\ECS\Light.cpp" />
+    <ClCompile Include="Source\ECS\MeshRenderer.cpp" />
+    <ClCompile Include="Source\ECS\TextRenderer.cpp" />
+    <ClCompile Include="Source\ECS\Transform.cpp" />
+    <ClCompile Include="Source\Editor\Console.cpp" />
+    <ClCompile Include="Source\Editor\Editor.cpp" />
+    <ClCompile Include="Source\Editor\EditorWindow.cpp" />
+    <ClCompile Include="Source\Editor\FileBrowser.cpp" />
+    <ClCompile Include="Source\Editor\GameWindow.cpp" />
+    <ClCompile Include="Source\Editor\Hierarchy.cpp" />
+    <ClCompile Include="Source\Editor\Toolbar.cpp" />
+    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\Font.cpp" />
+    <ClCompile Include="Source\FontCache.cpp" />
+    <ClCompile Include="Source\GameState.cpp" />
+    <ClCompile Include="Source\Game\HeadBob.cpp" />
+    <ClCompile Include="Source\Game\PlayerController.cpp" />
+    <ClCompile Include="Source\Input.cpp" />
+    <ClCompile Include="Source\Material.cpp" />
+    <ClCompile Include="Source\Mesh.cpp" />
+    <ClCompile Include="Source\MMath.cpp" />
+    <ClCompile Include="Source\Model.cpp" />
+    <ClCompile Include="Source\ModelCache.cpp" />
+    <ClCompile Include="Source\MTime.cpp" />
+    <ClCompile Include="Source\ResourceManager.cpp" />
+    <ClCompile Include="Source\Shader.cpp" />
+    <ClCompile Include="Source\Source.cpp" />
+    <ClCompile Include="Source\Texture.cpp" />
+    <ClCompile Include="Source\TextureCache.cpp" />
+    <ClCompile Include="Source\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Minotaur\Minotaur Engine\Minotaur Engine\Source\ECS\FPSCounter.h" />
+    <ClInclude Include="DeveloperState.h" />
+    <ClInclude Include="External Libraries\imgui\imconfig.h" />
+    <ClInclude Include="External Libraries\imgui\imgui.h" />
+    <ClInclude Include="External Libraries\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="External Libraries\imgui\imgui_impl_sdl.h" />
+    <ClInclude Include="External Libraries\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="External Libraries\imgui\imgui_internal.h" />
+    <ClInclude Include="External Libraries\imgui\imstb_rectpack.h" />
+    <ClInclude Include="External Libraries\imgui\imstb_textedit.h" />
+    <ClInclude Include="External Libraries\imgui\imstb_truetype.h" />
+    <ClInclude Include="Source\Cache.h" />
+    <ClInclude Include="Source\Debug.h" />
+    <ClInclude Include="Source\ECS\BoxCollider.h" />
+    <ClInclude Include="Source\ECS\Camera.h" />
+    <ClInclude Include="Source\ECS\Collider.h" />
+    <ClInclude Include="Source\ECS\ECS.h" />
+    <ClInclude Include="Source\ECS\FPSCounter.h" />
+    <ClInclude Include="Source\ECS\Light.h" />
+    <ClInclude Include="Source\ECS\MeshRenderer.h" />
+    <ClInclude Include="Source\ECS\TextRenderer.h" />
+    <ClInclude Include="Source\ECS\Transform.h" />
+    <ClInclude Include="Source\Editor\Console.h" />
+    <ClInclude Include="Source\Editor\Editor.h" />
+    <ClInclude Include="Source\Editor\EditorWindow.h" />
+    <ClInclude Include="Source\Editor\FileBrowser.h" />
+    <ClInclude Include="Source\Editor\GameWindow.h" />
+    <ClInclude Include="Source\Editor\Hierarchy.h" />
+    <ClInclude Include="Source\Editor\Toolbar.h" />
+    <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\Font.h" />
+    <ClInclude Include="Source\FontCache.h" />
+    <ClInclude Include="Source\GameState.h" />
+    <ClInclude Include="Source\Game\HeadBob.h" />
+    <ClInclude Include="Source\Game\PlayerController.h" />
+    <ClInclude Include="Source\Glyph.h" />
+    <ClInclude Include="Source\Input.h" />
+    <ClInclude Include="Source\Material.h" />
+    <ClInclude Include="Source\Mesh.h" />
+    <ClInclude Include="Source\MMath.h" />
+    <ClInclude Include="Source\Model.h" />
+    <ClInclude Include="Source\ModelCache.h" />
+    <ClInclude Include="Source\MTime.h" />
+    <ClInclude Include="Source\Primitives.h" />
+    <ClInclude Include="Source\ResourceManager.h" />
+    <ClInclude Include="Source\Serialization\cereal_glm.h" />
+    <ClInclude Include="Source\Shader.h" />
+    <ClInclude Include="Source\Texture.h" />
+    <ClInclude Include="Source\TextureCache.h" />
+    <ClInclude Include="Source\Utilities\action.h" />
+    <ClInclude Include="Source\Utilities\stringUtil.h" />
+    <ClInclude Include="Source\Vertex.h" />
+    <ClInclude Include="Source\Window.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
