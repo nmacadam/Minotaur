@@ -27,6 +27,7 @@ A C++ Entity-Component System based game engine.  Currently working towards a si
 ### Dependencies:
 * [SDL](https://www.libsdl.org/) (using SDL2, SDL_image)
 * OpenGL (using [GLEW](http://glew.sourceforge.net/))
+* [FreeType](https://www.freetype.org/)
 * [Assimp](http://www.assimp.org/)
 * [cereal](https://uscilab.github.io/cereal/index.html)
 * [imgui](https://github.com/ocornut/imgui)
