@@ -12,7 +12,6 @@ A C++ Entity-Component System based game engine.  Currently working towards a si
 
 ### WIP:
 * Editor-based workflow
-* Component polymorphism
 * Entity/Component serializing/deserializing
 * Text rendering with FreeType
 * Physics integration
